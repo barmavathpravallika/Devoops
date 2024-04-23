@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Pull source code from GitHub repository
-                git url: ‘your github reppo URL', branch: 'main'
+                git url: 'https://github.com/barmavathpravallika/Devoops.git', branch: 'main'
 
                 // Copy code to web server path
                 sh 'sudo cp -r ./* /var/www/html/'
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 // Retrieve the URL of your application
                 // Replace this with the command to get the URL of your application
-                 echo "http://Your instance IP/index.html" 
+                 echo "http://13.60.34.5/index.html" 
             }
         }
     }
